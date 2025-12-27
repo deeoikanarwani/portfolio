@@ -1,0 +1,189 @@
+/* Reset & Basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #f1f8ff);
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* Section Spacing */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #e0f7fa;
+}
+
+.text {
+  max-width: 500px;
+  padding: 20px;
+}
+
+.text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.text h1 span {
+  color: #0077b6;
+}
+
+.text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  margin: 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #0077b6;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #005f73;
+}
+
+.socials {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.socials a {
+  color: #0077b6;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+/* Animation Section */
+.anim {
+  margin: 20px;
+}
+
+/* Section Headings */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0077b6;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  margin: 10px auto;
+  width: 60px;
+  height: 3px;
+  background: #0077b6;
+}
+
+/* Skills */
+.skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills ul li {
+  background: #caf0f8;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #023e8a;
+  font-weight: 500;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Projects */
+.projects .project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  background: #ffffff;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.03);
+}
+
+.project h3 {
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+/* Experience, Education, Strengths */
+.experience ul,
+.strengths ul,
+.achievements ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+
+.education p {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95rem;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text {
+    padding: 10px;
+  }
+
+  .project {
+    width: 90%;
+  }
+}
